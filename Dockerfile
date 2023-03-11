@@ -8,9 +8,9 @@ RUN mkdir -p /var/run/sshd \
   && true
 
 RUN useradd remote -s /bin/bash \
-        && mkdir /home/remote \
-        && chown remote:remote /home/remote \
-        && true
+  && mkdir /home/remote \
+  && chown remote:remote /home/remote \
+  && true
 
 ADD sshd_config /etc/ssh/sshd_config
 
